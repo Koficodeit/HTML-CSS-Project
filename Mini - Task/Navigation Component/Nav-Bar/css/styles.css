@@ -1,0 +1,156 @@
+/* ------ Google Font ----- */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito&family=PT+Sans&family=Roboto&display=swap');
+
+
+
+/* ----- UNIVERSAL STYLING ----- */
+
+*, *::after, *::before {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+/* ----- GENERAL STYLING ----- */
+body {
+    background-color: #353638;
+    color: aliceblue;
+    font-family: "Roboto", serif;
+}
+
+
+
+/* ----- REST STYLING ----- */
+
+a, button, input, img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+
+
+/* ----- Navigation ----- */
+.navBar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #c7cbd3;
+    padding: 0.5rem 2rem;
+    gap: 3rem;
+}
+
+.logoImg {
+    width: 40px;
+    height: 40px;
+}
+
+.navList {
+    display: flex;
+    gap: 1rem;
+}
+
+.navList li a {
+    color: #1d1d1d;
+    font-size: 1.125rem;
+}
+
+.navList li a:hover, .navList li a:active {
+    color: #454559;
+}
+
+.inputBtn {
+    display: flex;
+    gap: 3rem;
+}
+
+.search-container {
+    position: relative;
+}
+
+input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #78787b;
+    color: #fdfdfd;
+}
+
+input::placeholder {
+    color: #c7cbd3;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #c7cbd3;
+    pointer-events: all;
+}
+
+button {
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #302f2f;
+    color: aliceblue;
+}
+
+
+
+/* ----- Header-Hero Section ----- */
+.hero {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    /* width: 100vw; */
+    text-align: center;
+}
+
+.heroTitle {
+    font-family: "Bree Serif", serif;
+    font-weight: 900;
+}
+
+.heroPara {
+    max-width: 500px;
+    width: 90%;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
