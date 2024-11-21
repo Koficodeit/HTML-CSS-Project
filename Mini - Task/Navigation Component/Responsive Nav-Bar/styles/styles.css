@@ -1,0 +1,306 @@
+/* -------- GOOGLE FONTS -------- */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Bree+Serif&family=Nunito&family=PT+Sans&family=Roboto&display=swap');
+
+
+
+/* -------- UNIVERSAL STYLING -------- */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+
+/* -------- GENERAL STYLING -------- */
+body {
+    background-color: rgb(1, 89, 83);
+    overflow: hidden;
+    min-height: 100vh;
+    color: aliceblue;
+    font-size: 1.125rem;
+}
+
+
+
+/* -------- RESET STYLES -------- */
+a {
+    display: block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* -------- Navigation -------- */
+nav.navBar {
+    background-color: rgb(19, 23, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.logo img {
+    width: 1.7rem;
+}
+
+.logo span {
+    font-size: 1.25rem;
+    font-family: "Bokor", system-ui;
+    letter-spacing: 1px;
+}
+
+.navList {
+    display: flex;
+    gap: 2rem;
+}
+
+.navList li a {
+    color: aliceblue;
+    position: relative;
+}
+
+.navList li a::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: rgb(1, 89, 83);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in;
+}
+
+.navList li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btnContainer button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    z-index: 1;
+    position: relative;
+}
+
+.btnContainer button:first-child {
+    border: 2px solid rgb(1, 89, 83);
+    background-color: transparent;
+}
+
+.btnContainer button:first-child::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 89, 83);
+    transform: scaleX(0);
+    transform-origin: center right;
+    transition: transform 0.3s ease;
+}
+
+.btnContainer button:first-child:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+.btnContainer button:nth-child(2) {
+    background-color: rgb(1, 89, 83);
+}
+
+.btnContainer button:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid rgb(1, 89, 83);
+    transition: all 0.3s ease;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+
+.dropDown i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    width: 200px;
+    background-color: rgb(19, 23, 26);
+    margin-left: -11rem;
+    border-radius: 7px;
+}
+
+.dropdown-menu li a {
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgb(1, 89, 83);
+    color: aliceblue;
+}
+
+.dropdown-menu li a:hover {
+    padding: 1.5rem 0;
+    background-color: rgb(19, 19, 19);
+    transition: all 0.3s ease-in;
+}
+
+.dropdown-menu li a.auth-link {
+    background-color: rgb(28, 34, 38);
+}
+
+.dropdown-menu li a.auth-link:hover {
+    background-color: rgba(28, 34, 38, 0.808);
+}
+
+.dropDown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* -------- Navigation -------- */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+header h1, header p {
+    max-width: 550px;
+    width: 90%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-family: "Bokor", system-ui;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 1.25px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.125rem;
+    color: rgb(227, 234, 234);
+}
+
+
+
+
+
+
+/* ==========
+    MEDIA QUERY
+========== */
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .navList {
+        gap: 1rem;
+    }
+
+    .btnContainer button {
+        padding: 0.3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navList, .btnContainer {
+        display: none;
+    }
+
+    .dropDown {
+        display: inline-block;
+    }
+
+    .dropdown-menu li a {
+        font-size: 1rem;
+    }
+
+    header h1, header p {
+        max-width: 400px;
+        width: 90%;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.125rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    nav.navBar {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        width: 1rem;
+    }
+
+    .logo span {
+        font-size: 1.1rem;
+    }
+
+    .dropDown i {
+        font-size: 1.12rem;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    
+    header h1, header p {
+        max-width: 500px;
+        width: 95%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1.125rem;
+    }
+}
