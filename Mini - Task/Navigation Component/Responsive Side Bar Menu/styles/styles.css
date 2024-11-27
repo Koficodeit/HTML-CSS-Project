@@ -1,0 +1,227 @@
+/* ===== UNIVERSAL STYLES ===== */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+
+
+/* ===== Reset styles ===== */
+body {
+    font-size: 1.125rem;
+    background-color: rgb(1, 76, 76);
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+
+
+
+
+/* ===== Gobal Styles ===== */
+nav, ul li:hover, label .hamburger, label .cancel, header {
+    transition: all 0.5s ease;
+}
+
+
+
+/* ===== Navigation Styles ===== */
+nav {
+    background-color: rgb(34, 34, 34);
+    color: aliceblue;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    height: 100dvh;
+    width: 20dvw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-icon {
+    display: none;
+}
+
+img {
+    width: 80px;
+    border-radius: 500px;
+    margin-bottom: 0.5rem;
+}
+
+center {
+    padding: 1.5rem 0;
+}
+
+figcaption {
+    font-weight: 600;
+    color: rgb(166, 166, 169);
+}
+
+ul {
+    margin: 0 auto;
+    width: 65%;
+}
+
+ul li {
+    padding: 0.7rem 0;
+    cursor: pointer;
+}
+
+ul li a {
+    color: #f3f3f3;
+}
+
+ul li a i {
+    padding-right: 0.5rem;
+}
+
+ul li:hover {
+    padding-left: 1rem;
+}
+
+#check {
+    display: none;
+}
+
+label .hamburger, label .cancel {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+    border-radius: 3px;
+    color: #f3f3f3;
+    padding: 0.25rem 0.5rem;
+    display: none;
+}
+
+label .hamburger {
+    left: 40px;
+    top: 25px;
+    font-size: 1.35rem;
+}
+
+label .cancel {
+    z-index: 1111;
+    left: -75px;
+    top: 25px;
+    color: rgb(154, 153, 152);
+}
+
+#check:checked ~ nav {
+    left: 0;
+}
+#check:checked ~ label .hamburger {
+    left: 75px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label .cancel {
+    left: 75px;
+}
+
+main {
+    width: 80dvw;
+    margin-left: 20dvw;
+}
+
+header {
+    color: #f3f3f3;
+    background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.5)), url('../img/99222.jpg');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+section {
+    height: 100dvh;
+    border-bottom: 1px solid black;
+    color: aliceblue;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+
+/* ===========
+Media Query
+============= */
+
+@media screen and (max-width: 768px) {
+    main {
+        width: calc(100dvw - 75px);
+        margin-left: 75px;
+    }
+
+    nav {
+        width: 75px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+    img {
+        width: 50px;
+    }
+
+    figcaption {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    ul li a span {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 426px) {
+    main {
+        width: 100dvw;
+        margin-left: 0;
+    }
+
+    nav {
+        left: -2000px;
+        background-color: rgba(34, 34, 34, 0.506);
+    }
+
+    label .hamburger, label .cancel {
+        display: block;
+    }
+
+    .check:checked ~ main {
+        margin-left: 75px;
+    }
+    
+}
