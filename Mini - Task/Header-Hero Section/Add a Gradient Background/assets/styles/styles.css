@@ -1,0 +1,92 @@
+/* ===== Universal Styles ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: monospace;
+    font-size: 1.125rem;
+}
+
+
+
+/* ===== Rest Styles ===== */
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+
+
+
+/* ===== Navigation ===== */
+nav {
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1d1d1d;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    letter-spacing: 0.5;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+button a {
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #d7d5d5;
+    transition: all 0.5s ease-in;
+}
+
+
+
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(to bottom, #120539, #907dee, #020439);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    line-height: 1.7;
+}
+
+input {
+    margin-top: 5rem;
+    padding: 0.7rem 1rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+
+input:hover {
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid #020439;
+    transition: 0.5s;
+}
