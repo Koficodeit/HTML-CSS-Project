@@ -1,0 +1,107 @@
+/* ===== Universal Styles ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #462802;
+    font-size: 1.125rem;
+    font-family: monospace;
+}
+
+
+
+
+/* ===== Rest ===== */
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* ===== Header Styles ====== */
+header {
+    padding: 0 3%;
+    background: linear-gradient(to bottom, rgba(0, 0, 2, 0.176), rgba(0, 0, 2, 0.86)), url('../img/images\ \(2\).jpg');
+    height: 100dvh;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* - nav - */
+nav {
+    position: sticky;
+    top: 1%;
+    background-color: #faebd7;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(55, 54, 54);
+
+}
+
+/* - Hero - */
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+p {
+    color: rgb(214, 237, 237);
+    padding: 1rem 0;
+}
+
+button {
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #faebd7;
+    transition: all 0.5s ease-in;
+}
