@@ -1,0 +1,158 @@
+/* ===== UNIVERSAL STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100dvh;
+    background-color: #f5f5dc;
+}
+
+
+
+
+
+/* ===== RESETS ===== */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+span, img {
+    display: inline-block;
+}
+
+
+
+
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 110, 110);
+}
+
+ul {
+    display: inline-flex;
+}
+
+li a {
+    padding: 0.5rem 1rem;
+    color: #171717;
+    font-weight: 600;
+}
+
+li a:hover {
+    background: #bcdcf8ca;
+    transition: 0.3s ease-in;
+}
+
+.active {
+    border: 1px solid #171717;
+    border-radius: 3px;
+}
+
+img {
+    width: 2rem;
+    height: auto;
+}
+
+img, a, .logo, button {
+    cursor: pointer;
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    text-align: center;
+
+    background: linear-gradient(to top, rgba(0, 48, 6, 0.155), rgba(41, 0, 48, 0.6)), url('../imgs/image-card\ \(9\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0 100%);
+}
+
+section {
+    max-width: 750px;
+    width: 95%;
+    position: relative;
+}
+
+h1 {
+    color: aqua;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #f0f8ff;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    transition: 0.3s ease-in;
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+main {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5dc;
+    color: #038989;
+    font-size: 1.5rem;
+}
