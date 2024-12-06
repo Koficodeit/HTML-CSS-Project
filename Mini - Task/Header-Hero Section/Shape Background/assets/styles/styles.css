@@ -1,0 +1,162 @@
+/* ===== UNIVERSAL STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+}
+
+
+
+
+
+/* ===== RESET ===== */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+span, img {
+    display: block;
+}
+
+
+
+
+
+/* ===== MAVIGATION ===== */
+nav {
+    background: #030037;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    color: #f0f8ff;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+aside img {
+    width: 3rem;
+}
+
+.logo__text {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+ul li a {
+    color: #f0f8ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #1d1b4e;
+    transition: 0.5s ease-in;
+}
+
+.active {
+    border: 1px solid #024d489f;
+    background-color: #1d1b4e;
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+header {
+    background-color: #ee82ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+    padding: 0 3rem;
+    position: relative;
+}
+
+header::after, header::before {
+    content: '';
+    position: absolute;
+}
+
+header::after {
+    width: 130px;
+    height: 130px;
+    background: #0145565b;
+    left: 20%;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 80px;
+}
+
+header::before {
+    width: 150px;
+    height: 50px;
+    background-color: #68008878;
+    border-radius: 500px;
+    transform: rotate(-45deg);
+    right: 10%;
+    bottom: 1%;
+}
+
+.hero__text, .image {
+    max-width: 550px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #04013e;
+}
+
+p {
+    color: #383839;
+}
+
+.image {
+    display: flex;
+}
+
+.image img {
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 500px;
+}
+
+
+
+
+
+/* ===== MAIN ===== */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    font-size: 2rem;
+    background: cadetblue;
+}
