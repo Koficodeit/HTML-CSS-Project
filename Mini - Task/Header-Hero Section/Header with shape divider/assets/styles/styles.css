@@ -1,0 +1,135 @@
+/* ===== UNIVERSAL STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #2a2a2a;
+    font-size: 1.125rem;
+    color: rgb(22, 22, 22);
+    min-height: 100dvh;
+}
+
+
+
+
+
+/* ===== RESET ===== */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    /* display: inline-block; */
+}
+
+h1 {
+    color: rgb(71, 34, 1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
+}
+
+p {
+    max-width: 1000px;
+    width: 95%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #deb887;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #010144;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li a {
+    color: #2a1801;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+
+
+/* ===== HEADER ===== */
+header {
+    height: 100dvh;
+    background: linear-gradient(to bottom, #023caa6b, #00000029), url('../imgs/image-card\ \(33\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    background-color: #2a2a2a;
+    height: 100px;
+    clip-path: ellipse(50% 70% at 50% 100%);
+    z-index: ;
+    width: 100%;
+    bottom: 0;
+}
+
+header p {
+    color: #000000;
+    font-weight: 600;
+}
+
+
+
+
+
+/* ===== MAIN ===== */
+main {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
