@@ -1,4 +1,4 @@
-# Hero Section with Shape Divider
+# Hero Section with Animated Gradient Background
 
 <Description>
 This project showcases the design of a visually appealing Hero Section with an *Animated Gradient Background*. The goal was to create a smooth, dynamic, and engaging header or hero section using pure CSS animations. While the current implementation is desktop-focused and not responsive, it sets the stage for exploring further animation techniques.
@@ -70,7 +70,7 @@ The design focuses solely on desktop screens, with plans for responsiveness in f
 ## **Next Task**
 
 `Animated Background`
-    Add animations to the background using techniques such as:
+    Add animations gradient to the background using techniques such as:
 
       * Add text animations for the hero section.
       * Integrate background image animations for a dynamic visual effect.
