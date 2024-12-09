@@ -1,0 +1,160 @@
+/* ===== UINVERSAL STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    min-height: 100dvh;
+    background: #242424;
+}
+
+
+
+/* ===== REST STYLES ===== */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* ===== NAVIGATION STYLES ===== */
+nav {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li a {
+    color: #f7f6f6;
+    padding: 0.5rem 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background: #212121;
+}
+
+
+
+/* ===== GENERAL STYLES ===== */
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+
+
+/* ===== HEADER STYLES ===== */
+header {
+    line-height: 1.6;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.576), rgba(0, 0, 0, 0.308)), url('../imgs/image-card\ \(20\).jpg');
+    background-size: cover;
+    background-position: center;
+
+    animation-name: bg_img_animated;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bg_img_animated {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero__tex {
+    max-width: 800px;
+    width: 95%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #76bef9;
+    background: rgba(33, 33, 33, 0.735);
+}
+
+p {
+    color: #d9dcde;
+    font-size: 1.25rem;
+}
+
+button {
+    background: #f0f0f0;
+    color: #0a0a0a;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    bottom: -50px;
+}
+
+button:hover {
+    background: #909191;
+    transition: all 0.5s ease-in;
+}
+
+
+
+/* ===== MAIN STYLES ===== */
+main {
+    flex-direction: column;
+    padding: 0 2rem;
+}
+h2 {
+    font-size: 2rem;
+    color: #d9dcde;
+    margin-bottom: 2rem;
+}
+
+p {
+    max-width: 1000px;
+    width: 95%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+    background-color: #d9dcde;
+    height: 0;
+    padding: 2rem;
+}
+
+.footer p {
+    color: #0a0a0a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
