@@ -1,0 +1,205 @@
+/* ===== UNIVERSAL STYLE ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+
+
+/* ===== RESET STYLE ===== */
+a {
+    text-decoration: none;
+}
+
+
+
+/* ===== NAVIGATION STYLE ===== */
+nav {
+    background-color: #01002c;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #f0f8ff;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+span {
+    cursor: pointer;
+}
+
+
+
+/* ===== HEADER STYLE ===== */
+header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.196), rgba(0, 0, 0, 0.339)), url('../imgs/image-card\ \(30\).jpg');
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+
+    height: 80vh;
+    color: #00ffff;
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+
+    animation: bg-anime 1s ease;
+}
+
+@keyframes bg-anime {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero__text {
+    animation: text__anime 2s ease-in;
+}
+
+@keyframes text__anime {
+    from {
+        opacity: 0;
+        transform: translateX(-1100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    color: rgb(236, 251, 251);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #f0f8ff;
+    border-radius: 5px;
+    color: #f0f8ff;
+    font-weight: 600;
+    background: transparent;
+    transition: 0.7s ease-in;
+    position: relative;
+    bottom: -40px;
+}
+
+button:hover {
+    background-color: #00ffff;
+    color: #01002c;
+}
+
+
+
+/* ===== MAIN STYLE ===== */
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #01002c;
+}
+
+
+
+/* ===== FOOTER STYLE ===== */
+footer {
+    background: #01002c;
+    padding: 1rem 2rem;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+footer a {
+    color: #00ffff;
+}
+
+
+
+
+/* <><><><> MEDIA QUERY <><><><> */
+@media screen and (max-width: 824px) {
+    header {   
+        line-height: 1;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+
+
+
+@media screen and (max-width: 477px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 376px) {
+    header {
+        padding: 0 1rem;
+        background-position: right left;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
