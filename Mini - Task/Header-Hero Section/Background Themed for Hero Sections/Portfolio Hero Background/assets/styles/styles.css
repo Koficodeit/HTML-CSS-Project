@@ -1,0 +1,338 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Bokor&family=Bree+Serif&family=Concert+One&family=Courgette&family=Nunito&family=PT+Sans&family=Roboto&display=swap');
+
+
+
+/* ===== Universal Styles ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    background: #232323;
+    font-family: "PT Sans", serif;
+}
+
+
+
+/* ===== Reset ===== */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+
+
+/* ===== Navigation ===== */
+nav {
+    background: #080808;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-family: "Courgette", serif;
+    color: #82ffff;
+    padding: 0.5rem;
+    border: 1px solid #82ffff;
+    border-radius: 50%;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li {
+    padding: 0.5rem 1rem;
+}
+
+ul li a {
+    color: #f0f8ff;
+}
+
+form {
+    width: 250px;
+}
+
+input {
+    width: 100%;
+    border-radius: 7px;
+    padding: 0.35rem 1rem;
+    font-size: 1.125rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.55), rgba(8, 8, 8, 0.55)), url('../imgs/image\ \(5\).jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+
+    padding: 0 2rem;
+
+    animation:  slide_in 1s ease-in;
+}
+
+@keyframes slide_in {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero__text {
+    max-width: 700px;
+    width: 95%;
+}
+
+.hero__text p {
+    color: #f0f8ff;
+    line-height: 1.6;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.hero__text a {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border: 2px solid #b94d00;
+    color: #f0f8ff;
+    border-radius: 10px;
+}
+
+.hero__text a:hover {
+    background: #b94d0037;
+    transition: 0.5s ease-in;
+}
+
+h1 {
+    color: #b94d00;
+    font-family: "Concert One", serif;
+    font-size: 3.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+h1 > span {
+    position: relative;
+    color: #82ffff;
+    height: 4.3rem;
+    overflow: hidden;
+    text-align: left;
+}
+
+h1 span > span {
+    display: block;
+    animation: hero_text 5s infinite ease;
+    animation-delay: 1.5s;
+}
+
+@keyframes hero_text {
+    0% {
+        transform: translateY(0%);
+    }
+    
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+header figure {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+header figure img {
+    flex-grow: 1;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+
+/* ===== Main ===== */
+main {
+    background-color: #dfeded;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ===== footer ===== */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: #dfeded;
+}
+
+footer a {
+    color: #b94d00;
+}
+
+
+
+/* <><><><> MEDIA QUERY <><><><> */
+@media screen and (max-width: 1062px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h1 > span {
+        height: 3rem;
+    }
+
+    header figure img {
+        height: 200px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 1.125rem;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        color: #f0f8ff;
+    }
+    
+    header {
+        flex-direction: column-reverse;
+        justify-content: start;
+        text-align: center;
+    }
+
+    .hero__text {
+        width: fit-content;
+    }
+
+    .hero__text p {
+        padding-top: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    h1 > span {
+        height: 2.5rem;
+    }
+    
+    header figure {
+        height: 150px;
+    }
+    
+    header figure img {
+        height: 150px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 426px) {
+    nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo a {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h1 > span {
+        height: 2rem;
+    }
+
+    header figure {
+        height: 100px;
+    }
+    
+    header figure img {
+        height: 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.45rem;
+    }
+}
