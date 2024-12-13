@@ -1,0 +1,292 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Aref+Ruqaa&family=Bokor&family=Bree+Serif&family=Concert+One&family=Courgette&family=Nunito&family=PT+Sans&family=Roboto&display=swap');
+
+
+
+/* ===== UNIVERSAL STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-size: 1.125rem;
+    color: #f0f8ff;
+    min-height: 100vh;
+    background: #141414;
+}
+
+
+
+/* ===== RESET ===== */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../imgs/image\ 1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* nav menu */
+.hamburger {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1rem;
+    font-family: "Amita", serif;
+    padding: 0 0.5rem;
+    font-weight: 600;
+    border: 2px solid #d2691e;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li {
+    padding: 0.5rem 1rem;
+}
+
+ul li a {
+    color: #f0f8ff;
+    position: relative;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #f0f8ff;
+    transform: scaleX(0);
+    transform-origin: center right;
+    transition: transform 0.5s ease-in;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+.active {
+    font-weight: 600;
+    color: bisque;
+}
+
+.auth_link {
+    display: inline-flex;
+    gap: 0.25rem;
+}
+
+.auth_link a {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #f0f8ff;
+    font-weight: 500;
+    transition: all 0.5s ease-in;
+}
+
+.sign__in {
+    background: #161616;
+    border: 1px solid transparent;
+}
+
+.sign__up {
+    border: 1px solid #5cabf0;
+}
+
+.sign__in:hover {
+    border: 1px solid #f0f8ff;
+    background: transparent;
+}
+
+.sign__up:hover {
+    color: #141414;
+    background: #5cabf0;
+}
+
+
+/* hero content */
+.content {
+    max-width: 1000px;
+    width: 93%;
+    line-height: 1.7;
+    text-align: center;
+    animation: slideIn 3s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+}
+
+h1 {
+    font-family: "Aref Ruqaa", serif;
+    font-size: 3rem;
+}
+
+form {
+    max-width: 800px;
+    width: 93%;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    margin-top: 3rem;
+}
+/* ===== MAIN ===== */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+
+/* ===== FOOTER ===== */
+footer {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    color: #161616;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer a {
+    color: #d2691e;
+}
+
+
+/* <><><><> MEDIA QUERY <><><><> */
+@media screen and (max-width: 973px) {
+    
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+        padding-bottom: 2rem;
+    }
+
+    /* p {
+        line-height: 1.5;
+        width: 600px;
+        width: 90%;
+    } */
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        color: #f0f8ff;
+    }
+
+    ul, .auth_link {
+        display: none;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 455px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
