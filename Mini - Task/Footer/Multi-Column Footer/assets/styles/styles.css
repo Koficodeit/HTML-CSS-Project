@@ -1,0 +1,175 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Aref+Ruqaa&family=Bokor&family=Bree+Serif&family=Concert+One&family=Courgette&family=Nunito&family=PT+Sans&family=Roboto&display=swap');
+
+
+
+/* ===== UNIVERSAL STYLES ===== */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Nunito", serif;
+    min-height: 100vh;
+}
+
+
+
+/* ===== FOOTER FONTS ===== */
+footer {
+    background: #00002d;
+    width: 100%;
+    
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.footer_items {
+    width: 300px;
+    flex-grow: 1;
+}
+
+article.quick_link {
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-family: "Concert One", serif;
+    letter-spacing: 1px;
+    color: #deedfb;
+    padding-bottom: 0.5rem;
+}
+
+p, a, address {
+    color: #9f9f9f;
+}
+
+.about p {
+    padding-bottom: 1rem;
+}
+
+.about a {
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    color: #deedfb;
+    border: 1.5px solid #a9a9f8;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.about a:hover {
+    background: #a9a9f8ab;
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+.contact i {
+    color: #d3d3f8;
+    padding-right: 0.25rem;
+}
+
+.contact a:hover, address:hover, .quick_link li a:hover {
+    color: #a9a9f8;
+    text-decoration: underline;
+}
+
+.contact p.email {
+    padding: 0;
+}
+
+.contact p, address, .quick_link li:not(:first-child) {
+    padding-top: 0.5rem;
+}
+
+.sign_up input, .sign_up button {
+    width: 100%;
+    display: block;
+    background: #2b2b40;
+    color: #deedfb;
+    padding: 0.5rem 1rem;
+    margin-top: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.sign_up button {
+    background: #a9a9f8;
+    color: #000000;
+    font-weight: 600;
+}
+
+.sign_up button:hover {
+    background: #a9a9f888;
+    transition: 0.3s ease;
+}
+.social_copyright {
+    background: #d3d3f8;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.social_media_icons {
+    margin-bottom: 0.5rem;
+}
+
+.social_media_icons i {
+    color: #d3d3f8;
+    background-color: #080811;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+article.social_media_icons  i:hover {
+    color: aqua;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+article.copyright p {
+    color: #2b2b40;
+    font-weight: 600;
+}
+
+article.copyright p a {
+    color: rgb(200, 84, 0);
+}
+
+
+
+/* <><><><> Media Query <><><><> */
+@media screen and (max-width: 1165px) {
+    .about, .contact, .quick_link {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer_wrap {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
