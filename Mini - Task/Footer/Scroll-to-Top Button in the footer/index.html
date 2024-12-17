@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scroll-to-Top Button in the Footer.">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Scroll-to-Top Button in the Footer</title>
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+</head>
+<body>
+    <!-- <<<<< NAVIGATION >>>>> -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Koficodeit</a></li>
+        </ul>
+    </nav>
+
+    <!-- <<<<< MAIN >>>>> -->
+    <main>
+        <h1>Footer</h1>
+    </main>
+
+    <!-- <<<<< SCROLL-to-TOP BUTTON >>>>> -->
+     <aside class="scroll_to_top">
+        <a href="#nav"><i class="fas fa-arrow-up"></i></a>
+     </aside>
+    <footer>
+        <!--*** Footer Navigation Menu ***-->
+        <nav class="footer__nav">
+            <ul class="list_none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+
+        <!--*** Multi Colunm Layout ***-->
+        <section class="footer__wrapper">
+
+            <!-- quick links -->
+            <article class="quick__links">
+                <h3>Quick Links</h3>
+                <ul class="list_none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </article>
+    
+            <!-- about us -->
+            <article class="about__us">
+                <h3>About</h3>
+    
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nulla eos porro dolor enim iusto ullam. Aspernatur nisi non doloribus laboriosam.</p>
+    
+                <a href="#">Learn More</a>
+            </article>
+
+            <!-- sign up -->
+            <article class="sign__up">
+                <h3>Newsletter</h3>
+                <form action="#">
+                    <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" class="block form__input">
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="name" class="block form__input">
+    
+                        <input type="checkbox" id="checkbox"> <label for="checkbox">I agree to the privacy policy</label>
+    
+                        <button type="submit" class="block">Subscribe</button>
+                </form>
+            </article>
+    
+            <!-- social media -->
+            <article class="social__media">
+                <h3>Follow Us</h3>
+                <i class="fa-brands fa-linkedin-in"></i>
+    
+                <i class="fa-brands fa-github"></i>
+    
+                <i class="fa-brands fa-x-twitter"></i>
+    
+                <i class="fa-brands fa-instagram"></i>
+            </article>
+        </section>
+
+        <!--*** Accordion Menu ***-->
+        <section class="accordion">
+            <article class="accordion__wrapper">
+
+                <input type="checkbox" name="menu__accordion" id="quick__links" class="accordion__input">
+                <label for="quick__links" class="accordion__label">Quick Links <span class="arrow">></span></label>
+                    
+                <ul class="accordion__content list_none">
+                    <li><a href="#frontend-resources">Frontend Development</a></li>
+                    <li><a href="#backend-resources">Backend Development</a></li>
+                    <li><a href="#devops-resources">DevOps Basics</a></li>
+                    <li><a href="#portfolio-projects">Portfolio Projects</a></li>
+                    <li><a href="#code-challenges">Code Challenges</a></li>
+                </ul>
+            </article>
+
+            <article class="accordion__wrapper">
+                <input type="checkbox" name="menu__accordion" id="support" class="accordion__input">
+                <label for="support" class="accordion__label">Support or FAQs <span class="arrow">></span></label>
+                
+                <ul class="accordion__content">
+                    <li><span class="qst">What is Full-Stack Development?</span>
+                        <ul>
+                            <li><strong>Answer: </strong> Full-stack development involves working on both the frontend (the visible part of a website or application) and the backend (server, database, and application logic). A full-stack developer has the skills to build and maintain both sides of a web application.</li>
+                        </ul>
+                    </li>
+
+                    <li><span class="qst">What skills do I need to learn to become a Full-Stack Developer?</span>
+                        <ul>
+                            <li><strong>Answer:</strong>
+                            <ul>
+                                <li>Frontend Skills:
+                                    <ul>
+                                        <li>HTML, CSS (Styling), JavaScript (Interactivity)</li>
+                                        <li>Frameworks like React, Angular, or Vue.js</li>
+                                    </ul>
+                                </li>
+                                <ul>
+                                    <li>Backend Skills:
+                                        <ul>
+                                            <li>Server-side programming (Node.js, Django, Ruby on Rails, etc.)</li>
+                                            <li>Database management (SQL, MongoDB, etc.)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                <li>Other Tools:
+                                <ul>
+                                    <li>Version control systems like Git</li>
+                                        <li>APIs and RESTful services</li>
+                                            <li>Deployment platforms like Heroku, Vercel, or AWS</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span class="qst">Do I need prior coding experience to learn Full-Stack Development?</span>
+                        <ul>
+                            <li><strong>Answer:</strong> No prior experience is necessary. You can start with the basics of HTML, CSS, and JavaScript, and gradually move to more advanced topics like backend programming and database management. Platforms like freeCodeCamp, Codecademy, and The Odin Project offer beginner-friendly resources.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span class="qst">How long does it take to become a Full-Stack Developer?</span>
+                        <ul>
+                            <li><strong>Answer:</strong> The timeline varies based on your dedication and prior experience. Consistent practice and project-building are key to accelerating your learning.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span class="qst">What projects should I build as a beginner Full-Stack Developer?</span>
+                        <ul>
+                            <li><strong>Answer:</strong> Start with small, manageable projects to practice skills. Examples include:
+                            <ul>
+                                <li><strong>Frontend Projects:</strong> Responsive portfolio website, weather app, to-do list.</li>
+                                <li><strong>Full-Stack Projects:</strong>
+                                <ul>
+                                    <li>Blog or CMS (Content Management System).</li>
+                                    <li>E-commerce platform with a shopping cart and payment gateway.</li>
+                                    <li>Social media dashboard with user authentication.</li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="accordion__wrapper">
+
+                <input type="checkbox" name="menu__accordion" id="resources" class="accordion__input">
+                
+                <label for="resources" class="accordion__label">Resources <span class="arrow">></span></label>
+                    
+                <ul class="accordion__content list_none">
+                    <li><a href="https://developer.mozilla.org/">HTML & CSS Basics</a></li>
+                    <li><a href="https://www.freecodecamp.org/">JavaScript Essentials</a></li>
+                    <li><a href="https://reactjs.org/">Frontend Frameworks</a></li>
+                    <li><a href="https://nodejs.org/">Backend Development</a></li>
+                    <li><a href="https://www.mongodb.com/">Databases</a></li>
+                    <li><a href="https://git-scm.com/">Version Control</a></li>
+                </ul>
+            </article>
+            </article>
+        </section>
+
+
+        <!--*** Footer Feedback Form ***-->
+        <article class="feedback__form">
+            <h3>Feedback Form</h3>
+
+            <form action="#">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" class="block form__input">
+
+                <label for="e-mail">Email</label>
+                <input type="email" id="e-mail" class="block form__input">
+
+                <label for="msg">Message</label>
+                <textarea name="message" id="msg" rows="5" cols="60" class="block"></textarea>
+
+                <button type="submit" class="block">Send Feedback</button>
+            </form>
+        </article>
+    </footer>
+</body>
+</html>
