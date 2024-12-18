@@ -1,0 +1,128 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+section {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #cee3fe;
+    font-size: 1.125rem;
+}
+
+button:focus {
+    outline: 2px solid #007BFF;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+
+/* ==== FLAT ==== */
+section.flat {
+    background: #323232;
+}
+
+.flat button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    background: #323232;
+    box-shadow:  -5px -5px 10px #181818,
+                5px 5px 10px #4c4c4c;
+
+}
+
+.flat button:hover {
+    box-shadow:  -3px -3px 6px #1c1c1c,
+                 3px 3px 6px #494949;
+}
+
+.flat button:active {
+    box-shadow:  inset -3px -3px 6px #1c1c1c,
+                 inset 3px 3px 6px #494949;
+}
+
+
+
+/* ==== CONVEX ==== */
+section.convex {
+    background: #4b2800;
+}
+
+.convex button {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #502b00, #442400);
+    box-shadow:  inset 8px 8px 10px #2c1700,
+                 inset -8px -8px 10px #6b3900;
+}
+
+.convex button:hover {
+background: linear-gradient(315deg, #502b00, #442400);
+box-shadow:  inset 4px 4px 8px #2c1700,
+inset -4px -4px 8px #6b3900;
+}
+
+.convex button:active {
+background: linear-gradient(315deg, #502b00, #442400);
+box-shadow:  -4px -4px 10px #2c1700,
+4px 4px 10px #6b3900;
+}
+
+
+
+/* ==== PRESSED ==== */
+
+section.pressed {
+    background-color: #0d4000;
+}
+
+.pressed button {
+    height: 150px;
+    width: 150px;
+background: #0d4000;
+box-shadow: inset 9px 9px 10px #082500,
+            inset -9px -9px 9px #125b00;
+}
+
+.pressed button:hover {
+box-shadow: inset 7px 7px 10px #082500,
+            inset -7px -7px 10px #125b00;
+}
+
+.pressed button:active {
+box-shadow: inset -7px -7px 10px #082500,
+            inset 7px 7px 10px #125b00;
+}
