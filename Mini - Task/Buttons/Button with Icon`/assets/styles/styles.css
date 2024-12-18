@@ -1,0 +1,150 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00ffff;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+body, section.menu, article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===== MENU ===== */
+section.menu {
+    gap: 1rem;
+    background: #00a6a6;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+section.menu button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0f8ff;
+    border-radius: 7px;
+    border: none;
+}
+
+section.menu button:first-child {
+    background: #18005b;
+    transition: 0.5s;
+}
+
+section.menu button:first-child:hover {
+    transform: scaleX(1.3);
+    background-color: #0e0033;
+}
+
+section.menu button:nth-child(2) {
+    background: #4d3f91;
+}
+
+section.menu button:nth-child(2):hover i {
+    animation: rotate 1s ease-in infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.menu button:nth-child(3) {
+    background: #94d6f5;
+}
+
+section.menu button:nth-child(4) {
+    background: #a4f8ad;
+}
+
+section.menu button:nth-child(5) {
+    background: #f8f4a4;
+}
+
+.slide i, span {
+    color: #0e0033;
+    transition: 10s ease-in-out;
+}
+
+.slide i {
+    display: none;
+}
+
+.slide:hover span {
+    display: none;
+}
+
+.slide:hover i {
+    display: block;
+    color: #6c3f01;
+}
+
+
+
+/* ===== PAGES ===== */
+section.pages button {
+    padding: 2rem;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+section.pages button:hover i {
+   animation: rotate 3s ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate-reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(70deg);
+    }
+
+    100% {
+        transform: rotate(-70deg);
+    }
+}
+
+
+
+/* ===== RATING ===== */
+section.rating {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(14, 0, 51, 0.293);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #0e0033;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    display: none;
+}
+
+section.rating button {
+    background: transparent;
+    border: none;
+}
+
+label {
+    font-size: 2rem;
+    color: #804b00;
+}
+
+input:checked + label {
+    color: #148114;
+}
