@@ -63,9 +63,7 @@ Consistent and smooth transitions for all button states.
 ## **Next Task**
 
  `Button with Icon`
-*   Add an icon inside the button using Font.
-
-*   Awesome or other libraries.
+*   Add an icon inside the button using Font Awesome or other libraries.
 Position the icon (left, right, top, or center) with proper spacing.
 
 
