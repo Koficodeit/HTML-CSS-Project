@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login Form">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Login Form</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+</head>
+<body>
+    <section class="Form__wrapper">
+        <figure>
+            <img src="assets/imgs/photo_2024-12-20_17-18-33.jpg" alt="logo" class="logo">
+        </figure>
+
+        <h1>Koficodeit</h1>
+        <p class="text_sm">Login to your account</p>
+
+        <form action="#">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required class="input__block text_sm">
+
+            <input type="password" name="password" id="password" placeholder="Password" required class="input__block text_sm">
+
+            <aside class="flex">
+                <div>
+                    <input type="checkbox" name="check" id="check"> <label for="check">Remember me</label>
+                </div>
+                
+                <a href="#">Forgot Password?</a>
+            </aside>
+
+            <button type="submit" class="input__block">Login</button>
+        </form>
+
+        <div class="acct">
+            <p>Not a member? <a href="#">Create New Accout</a></p>
+        </div>
+
+        <a href="#" class="flex google">
+            <img src="assets/imgs/google-icon.png" alt="google icon" class="google__icon">
+            <span>Continue with Google</span>
+        </a>
+    </section>
+</body>
+</html>
