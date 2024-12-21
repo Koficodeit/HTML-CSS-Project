@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Newsletter Subscription">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Newsletter Subscription</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <main class="newsletter_subscription">
+        <h1>Subscribe to Our Newsletter</h1>
+        <p>Stay updated with our latest news and updates delivered to your inbox.</p>
+
+        <form action="mailto:emmanuelanamanuel03@gmail.com" method="post">
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preference</legend>
+
+                <div>
+                    <label for="frequency">Frequency</label>
+                    <select name="" id="frequency">
+                        <option value="Weekly">Weekly</option>
+                        <option value="Bi-Weekly">Bi-Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Intrest</legend>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="tech" id="tech">
+                            <label for="tech">Technology</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="bus" id="bus">
+                            <label for="bus">Business</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="sic" id="sic">
+                            <label for="sic">Science</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </fieldset>
+
+            <div>
+                <input type="checkbox" id="policy" required>
+                <label for="policy">I agree to receive newsletters and accept the data privacy statement.</label>
+            </div>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+</body>
+</html>
