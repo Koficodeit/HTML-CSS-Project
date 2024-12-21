@@ -1,4 +1,4 @@
-# Simple Contact Form Project 
+# Newsletter Subscription Form 
 
 ## **Description** 
 
