@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feedback Form">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Feedback Form</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main class="feedback_container">
+        <h1>Share Your Feedback</h1>
+        <p>Help us improve by sharing your experience with us.</p>
+
+        <form action="#" post="method">
+            <fieldset>
+                <legend class="border_btm">Personal Info</legend>
+
+                <section>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required autocomplete="name">
+                </section>
+                <section>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend class="border_btm">Your Feedback</legend>
+
+                <section>
+                    <label for="category">Category</label>
+                    <select name="category" id="category" required>
+                        <option value="">Select a category</option>
+                        <option value="general">General</option>
+                        <option value="report">Bug Report</option>
+                        <option value="request">Feature Request</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label for="rating">Overall Experience</label>
+                    <ul class="rating-group">
+                        <li>
+                            <input type="radio" id="rating1" name="rating" value="excellent" required>
+                            <label for="rating1">Excellent</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="rating2" name="rating" value="2">
+                            <label for="rating2">Good</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="rating3" name="rating" value="average">
+                            <label for="rating3">Average</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="rating4" name="rating" value="4">
+                            <label for="rating4">Poor</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="check">
+                    <label for="areas">Areas for Improvement</label>
+                    <p>Select all that apply.</p>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="UI" id="UI">
+                            <label for="UI">User Interface</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="performance" id="performance">
+                            <label for="performance">Performance</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="features" id="features">
+                            <label for="features">Features</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="support" id="support">
+                            <label for="support">Customer Support</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <label for="msg">Your Message</label>
+
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Please share your thought"></textarea>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="contact" id="contact" required>
+                    <label for="contact">Contact Consent</label>
+                    <p>You agree to be contacted about your feedback.</p>
+                </section>
+            </fieldset>
+
+            <button type="submit">Send Feedback</button>
+        </form>
+    </main>
+</body>
+</html>
