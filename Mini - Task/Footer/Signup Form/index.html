@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup Form with Validation States">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Signup Form with Validation States</title>
+
+    <!-- Title -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Create an Account</h1>
+
+        <form action="#" method="post">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" minlength="2" pattern="[A-Za-z ]{2,}" autocomplete="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@example.com" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title=" 8 characters long, upper and lower case, numbers, and symbols." autocomplete="password" required>
+            </div>
+            <div>
+                <label for="comfirm_password">Comfirm Password</label>
+                <input type="password" name="comfirm_password" id="comfirm_password" placeholder="Re-enter your password" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title="Password should match the previous password" autocomplete="comfirm_password" required>
+            </div>
+
+            <div class="remember">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+</body>
+</html>
