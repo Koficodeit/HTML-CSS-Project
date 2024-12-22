@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reservation Form">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Reservation Form</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Make a Reservation</h1>
+
+        <form action="#" method="post">
+            <article>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" minlength="2" pattern="[A-Za-z ]{2,}" autocomplete="name" required>
+            </article>
+            <article>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"
+                autocomplete="email" required>
+            </article>
+            <article>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]{11-15}" aria-required="true" aria-label="Phone number" autocomplete="phone" required>
+            </article>
+            <article>
+                <label for="date">Schudle Date</label>
+                <input type="date" name="date" id="date" aria-required="true" aria-label="Date" required>
+            </article>
+            <article>
+                <label for="time">Schudle Time</label>
+                <input type="time" name="time" id="time" aria-required="true" aria-label="time" required>
+            </article>
+            <article>
+                <label for="number">Number of Guest</label>
+                <select name="number_guest" id="number_guest" required>
+                    <option value="" disabled selected>Select number of guest</option>
+                    <option value="guest1">1 Guest</option>
+                    <option value="guest2">2 Guest</option>
+                    <option value="guest3">3 Guest</option>
+                    <option value="guest4">4 Guest</option>
+                    <option value="guest5">5 Guest</option>
+                    <option value="guest6">6 Guest</option>
+                    <option value="guest7">7 Guest</option>
+                    <option value="guest8">8 Guest</option>
+                    <option value="guest9">9 Guest</option>
+                    <option value="guest10">10 Guest</option>
+                </select>
+            </article>
+            <article>
+                <label for="occasion">Occasion</label>
+                <select name="occasion" id="occasion" required>
+                    <option value="" disabled selected>Select occasion</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="other">Other</option>
+                </select>
+            </article>
+            <article>
+                <label for="comment">Special Request (optional)</label>
+                <textarea name="comment" id="comment" placeholder="Any special requests or dietary requirements?" rows="5" cols="60"></textarea>
+            </article>
+
+            <button type="submit">Comfirm Reservation</button>
+        </form>
+    </main>
+</body>
+</html>
