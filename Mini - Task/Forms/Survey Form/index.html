@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey Form">
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Developer Survey</h1>
+
+        <form action="#" method="post">
+            <article>
+                <label for="name" class="label">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" pattern="[A-Za-z ]{2,}" autocomplete="name" required>
+            </article>
+            <article>
+                <label for="email" class="label">Email</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@example.com" autocomplete="email" required>
+            </article>
+            <article>
+                <label for="occupation" class="label">Occupation</label>
+                <select name="occupation" id="occupation" required>
+                    <option value="" selected>Occupation</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="student">Student</option>
+                    <option value="developer">Developer</option>
+                    <option value="lecturer">Lecturer</option>
+                    <option value="others">Others</option>
+                </select>
+            </article>
+            <article>
+                <label for="interest" class="label">Area of Interest</label>
+                <div>
+                    <input type="checkbox" name="web_dev" id="web_dev">
+                    <label for="web_dev">Web Development</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="mobile_dev" id="mobile_dev">
+                    <label for="mobile_dev">Mobile Development</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="desktop_app" id="desktop_app">
+                    <label for="desktop_app">Desktop Application</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cloud_computing" id="cloud_computing">
+                    <label for="cloud_computing">Cloud Computing</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="artificial_inttigence" id="artificial_inttigence">
+                    <label for="artificial_inttigence">Artificial Inttigence</label>
+                </div>
+            </article>
+            <article>
+                <label for="experience" class="label">Experience </label>
+
+                <div>
+                    <input type="radio" name="experience" id="beginner" required>
+                    <label for="beginner">Beginner (0-2 years)</label>
+                </div>
+                <div>
+                    <input type="radio" name="experience" id="intermediate">
+                    <label for="intermediate">Intermediate (3-5 years)</label>
+                </div>
+                <div>
+                    <input type="radio" name="experience" id="advanced">
+                    <label for="advanced">Advanced (5+ years)</label>
+                </div>
+            </article>
+
+            <article>
+                <label for="improvement" class="label">Improvement</label>
+
+                <div>
+                    <input type="checkbox" name="better_doc" id="better_doc">
+                    <label for="better_doc">Better Documentation</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="more_tutorials" id="more_tutorials">
+                    <label for="more_tutorials">More Tutorials</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="code_example" id="code_example">
+                    <label for="code_example">Code Examples</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="comm_support" id="comm_support">
+                    <label for="comm_support">Community Support</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="dev_tools" id="dev_tools">
+                    <label for="dev_tools">Development Tools</label>
+                </div>
+            </article>
+
+            <article>
+                <label for="comment" class="label">Additional Comments</label>
+                <textarea name="comment" id="comment" rows="5" cols="50" placeholder="Please share yor thoughts..."></textarea>
+            </article>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+    </main>
+</body>
+</html>
