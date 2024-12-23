@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Application Form">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Job Application Form</title>
+
+    <!-- Font Awesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+    <main>
+        <h1>Job Application Form</h1>
+
+        <form action="#" method="post">
+            <article>
+                <label class="label" for="firstName">First Name</label>
+                <div class="relative">
+                    <i class="fa-solid fa-user icon-input"></i>
+                    <input class="input" type="text" name="firstName" id="firstName" placeholder="Enter first name" pattern="[A-Za-z ]{2,}" autocomplete="name" required>
+                </div>
+            </article>
+            <article>
+                <label class="label" for="lastName">Last Name</label>
+                <div class="relative">
+                    <i class="fa-solid fa-user icon-input"></i>
+                    <input class="input" type="text" name="lastName" id="lastName" placeholder="Enter your last name" pattern="[A-Za-z ]{2,}" autocomplete="name" required>
+                </div>
+            </article>
+            <article>
+                <label class="label" for="email">Email</label>
+                <div class="relative">
+                    <i class="fa-solid fa-envelope icon-input"></i>
+                    <input class="input" type="email" name="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+            </article>
+            <article>
+                <label class="label" for="phone">Phone Number</label>
+                <div class="relative">
+                    <i class="fa-solid fa-phone icon-input"></i>
+                    <input class="input" type="phone" name="phone" id="phone" placeholder="Enter your phone" autocomplete="phone" required>
+                </div>
+            </article>
+            <article>
+                <label class="label" for="position">Position Applied For</label>
+                <div class="relative">
+                    <i class="fa-solid fa-briefcase icon-input"></i>
+                    <input class="input" type="tel" name="position" id="position" placeholder="Enter the position your're applying for" required>
+                </div>
+            </article>
+            <article>
+                <label class="label"  for="education">Highest Level of Eeducation</label>
+                <div class="relative">
+                    <i class="fa-solid fa-user-graduate icon-input"></i>
+                    <select name="education" id="education" required>
+                        <option value="" disabled selected>Select your highest level of education</option>
+                        <option value="High School">High School</option>
+                        <option value="Associate's Degree">Associate's Degree</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Bachelor's Degree">Master's Degree</option>
+                        <option value="Bachelor's Degree">Doctorate</option>
+                    </select>
+                </div>
+            </article>
+            <article>
+                    <label class="label"  for="file">Upload Resume</label>
+                    <div class="file_upload">
+                        <input type="file" name="file" id="file" accept=".pdf, .doc, .docx" required>
+                        <div class="file_content">
+                            <i class="fa-solid fa-upload"></i>
+                            <span class="file-label">Choose a file</span>
+                            <span class="file-support">.pdf .doc .docx</span>
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <label class="label"  for="coverLetter">Cover Letter</label>
+                <textarea name="coverLetter" id="coverLetter" rows="5" cols="60" placeholder="Tell us why you're the perfect candidate..." required></textarea>
+            </article>
+            <article>
+                <input type="checkbox" name="policy" id="policy" required>
+                <label for="policy">I agree to the terms and conditions and privacy policy</label>
+            </article>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+</body>
+</html>
