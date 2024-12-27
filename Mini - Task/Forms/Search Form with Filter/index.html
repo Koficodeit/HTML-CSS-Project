@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Koficodeit">
+    <meta name="description" content="Search Form with Filter">
+
+    <!-- Title -->
+    <title>Search Form with Filter</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Product Search</h1>
+
+        <form action="#" method="post">
+            <section>
+                <article class="search-container">
+                    <label for="search">Search</label>
+                    <input type="text" name="search" id="search" placeholder="Search Product..." required>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </article>
+
+                <article class="range-container">
+                    <label for="range">Price Range</label>
+                    <input type="range" name="range" id="range" min="0" max="500" step="10" value="250">
+                    <div class="price">
+                        <span>$0</span>
+                        <span>$500</span>
+                    </div>
+                </article>
+            </section>
+
+            <article>
+                <select name="select-product" id="select-product">
+                    <option value="" disabled selected>All Categories</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="clothing">Clothings</option>
+                    <option value="books">Books</option>
+                    <option value="home">Home & Gardens</option>
+                    <option value="sport">Sport</option>
+                </select>
+            </article>
+
+            <article>
+                <button type="submit">Search</button>
+            </article>
+        </form>
+    </main>
+</body>
+</html>
