@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #110f1a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f0f8ff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    max-width: 600px;
+    width: 90%;
+    background-color: #1c192a;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form article:not(:nth-child(3)) {
+    margin-bottom: 1rem;
+}
+
+label {
+    color: #9b9b9b;
+    margin-bottom: 0.25rem;
+}
+
+article label, article input, button {
+    display: block;
+}
+
+div.input_icon {
+    position: relative;
+}
+
+div.input_icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b0b0b0;
+    padding-left: 0.5rem;
+}
+
+article input {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+}
+
+article input, button {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #f0f8ff;
+    border-radius: 7px;
+}
+
+article input:invalid {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 3px #f0f8ff;
+}
+
+article input:valid {
+    outline: none;
+    border-color: #0a9f0a;
+    box-shadow: 0 0 3px #0a9f0a;
+}
+
+article input:focus {
+    outline: none;
+    border-color: #0194fd;
+    box-shadow: 0 0 4px #0194fd;
+}
+
+.remember {
+    margin: 0.5rem 0 1rem 0;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.1);
+    border: none;
+}
+
+input[type="checkbox"]:focus + label, button:focus {
+    outline: 1px solid #0194fd;
+    outline-offset: 2px;
+}
+
+button {
+    background-color: #5f1094;
+    font-weight: 600;
+    color: #f0f8ff;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+    input, label, button, i {
+        font-size: 0.9rem;
+    }
+}
