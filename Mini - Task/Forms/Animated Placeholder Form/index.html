@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dark Mode Themed Form">
+    <meta name="author" content="Koficodeit">
+
+    <!-- Title -->
+    <title>Dark Mode Themed Form</title>
+    
+    <!-- Font Awesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Login Form</h1>
+
+        <form action="#" method="post">
+            <article>
+                <input type="text" name="userName" id="userName" placeholder="" minlength="2" pattern="[A-Za-z ]{2,}" aria-label="Username" aria-required="true" autocomplete="name" required>
+                <label for="userName">Username</label>
+            </article>
+            
+            <article>
+                <input type="email" name="email" id="email" placeholder="" aria-label="Email" aria-required="true" required>
+                <label for="email">Email</label>
+            </article>
+
+            <article>
+                <input type="password" name="password" id="password" placeholder="" minlength="11" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}" aria-label="Password" aria-required="true" required>
+                <label for="password">Password</label>
+            </article>
+            
+            <article>
+                <button type="submit">Submit</button>
+            </article>
+        </form>
+    </main>
+</body>
+</html>
