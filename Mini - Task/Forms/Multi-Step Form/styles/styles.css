@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    background: #f0f8ff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 500px;
+    width: 95%;
+    background: rgba(0, 15, 29, 0.137);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(0, 66, 127);
+}
+
+/* ===== Step Control & Bar ===== */
+input.ctrl {
+    display: none;
+}
+
+section.stepBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+section.stepBar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #8b8b8b;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+section.stepBar .stepBarBtn {
+    width: 2rem;
+    height: 2rem;
+    background: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #021629;
+    border-radius: 50%;
+    color: #021629;
+    font-weight: 600;
+    z-index: 2;
+}
+
+input#step-1:checked ~ section.stepBar .stepBarBtn:first-child,
+input#step-2:checked ~ section.stepBar .stepBarBtn:nth-child(1),
+input#step-2:checked ~ section.stepBar .stepBarBtn:nth-child(2),
+input#step-3:checked ~ section.stepBar .stepBarBtn:nth-child(1),
+input#step-3:checked ~ section.stepBar .stepBarBtn:nth-child(2),
+input#step-3:checked ~ section.stepBar .stepBarBtn:nth-child(3),
+input#step-4:checked ~ section.stepBar .stepBarBtn:nth-child(1),
+input#step-4:checked ~ section.stepBar .stepBarBtn:nth-child(2),
+input#step-4:checked ~ section.stepBar .stepBarBtn:nth-child(3),
+input#step-4:checked ~ section.stepBar .stepBarBtn:nth-child(4) {
+    background: #000e1b;
+    color: #f0f8ff;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #021629;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ===== Input Form ===== */
+article {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.25rem;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid #f0f8ff0c;
+    outline: none;
+    border-radius: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #047dd4;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="date"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid,
+textarea.textarea:valid {
+    border-color: #04d40b;
+}
+
+.step {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+input#step-1:checked ~ .step-1,
+input#step-2:checked ~ .step-2,
+input#step-3:checked ~ .step-3,
+input#step-4:checked ~ .step-4 {
+    display: block;
+}
+
+
+/* ===== Button ===== */
+aside.btnGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside.btnGroup .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+aside.btnGroup .btnNext {
+    background: #047dd4;
+    color: #f0f8ff;
+}
+
+aside.btnGroup .btnPrev {
+    background: #bcbcbc;
+    color: #011220;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
