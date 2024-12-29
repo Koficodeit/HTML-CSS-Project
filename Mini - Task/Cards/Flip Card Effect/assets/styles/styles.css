@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #d8edff;
+    color: black;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+section.cardContainer {
+    perspective: 1000px;
+}
+
+section.cardContainer:hover .card {
+    transform: rotateY(180deg);
+}
+
+section.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+article.cardFront, article.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back when viewing the front */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+article.cardBack {
+    transform: rotateY(180deg); /* Positions the back side for flipping */
+    background: #007BFF;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #d8edff;
+    color: #222222;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background: #9ac7f7;
+    color: #002a57;
+}
