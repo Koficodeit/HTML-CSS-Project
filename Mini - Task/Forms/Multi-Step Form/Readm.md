@@ -1,8 +1,8 @@
-# Animated Placeholder Form
+# Multi-Step Form Project
 
 ## **Description** 
 
-This project showcases the creation of an Animated Placeholder Form, a user-friendly and interactive form where placeholders dynamically shift upwards or disappear as the user starts typing. The form incorporates proper HTML input validation and adheres to accessibility standards with the use of <aria-label> and <aria-required> attributes. Enhanced visual feedback is provided with hover, focus, transform, and transition effects for improved user engagement.
+This project demonstrates the creation of a Multi-Step Form using only HTML and CSS. The form is divided into multiple steps, with each step displayed one at a time. The design includes proper input validation and interactive visual effects to enhance user engagement and usability.
 
 
 ---
@@ -10,27 +10,29 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 ## **Features**  
 
-1. *Dynamic Placeholder Animation*
+1. *Multi-Step Navigation*
    
-   - Placeholders smoothly move upwards or disappear when inputs are focused or typed into.
+   - Seamlessly transitions between form steps using CSS.
 
-2. *Form Validation*
+2. *Validation States*
    
-   - Built-in HTML validation to ensure users provide accurate data.  
-   
-   - Accessible validation states with <aria-required> attributes.  
+   - Implements HTML input validation for all form fields. 
 
 3. *Interactive Styling*
 
-   - Added hover and focus states for inputs. 
+   - Added `:hover`, `:focus`, and `:valid` pseudo-classes to provide visual feedback. 
 
-   - Smooth transitions and transforms for better feedback and engagement. 
+4. *CSS Transitions and Transforms*
 
-4. *Accessibility First*
+   - Smooth animations for form navigation and validation states.
 
-   - <aria-label> attributes for screen reader compatibility.
+5. *User-Friendly Design*
 
-   - Clear visual cues for validation states, enhancing usability for all users. 
+   - Designed for better interaction and engagement with clear error prompts and success indicators.
+
+6. *No JavaScript*
+
+   - Entirely built with HTML and CSS, ensuring simplicity and compatibility.
 
 
 ---
@@ -40,17 +42,19 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 ### *1. HTML Structure*
 
-   - Using <aria-label> to provide descriptive labels for assistive technologies.
+   - Leveraging HTML5 validation attributes like `required`, `pattern`, and `type`.
 
-   - Applying <aria-required> for clear indication of mandatory fields.
-
-   - Structuring forms to be semantic and accessible to screen readers.
+   - Using buttons with `type="button`" and `type="submit`" for navigation and submission.
 
 ### 2. *CSS Styling*  
 
-   - Implementing `:focus`, `:hover`, and :valid pseudo-classes to style form elements dynamically.
+   - Controlling the visibility of form steps using `:nth-of-type`, `:checked`, and sibling combinators.
 
-   - Using `transform` and `transition` to create smooth animations for placeholders.
+   - Applying transitions and transforms for smooth navigation between steps.
+
+   - Adding hover and focus effects to highlight active input fields.
+
+   - Customizing `:valid` and `:invalid` states to visually indicate input validity.
 
 ### 3. **Suggested Enhancements** 
 
@@ -64,9 +68,9 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 ## **Current Limitations**
 
-- No backend integration for form submission.
+- Does not support saving form data between steps (requires JavaScript or backend integration).
   
-- Error messages for invalid input are not fully customized yet.
+- Not optimized for smaller screen sizes (can be improved with responsive design).
 
 
 ---
@@ -78,7 +82,7 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 2. Open <index.html> in any modern browser to view the animated placeholder form.
    
-3. Enter input to see placeholder animation and validation in action.
+3. Navigate through the form steps and test the validation functionality.
 
 
 ---
@@ -86,9 +90,16 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 ## **Next Task**
 
-`Extra Challenges`
+`Cards`
 
-•	Multi-Step Form (CSS Only): Divide a form into steps and use CSS to show one section at a time.
+•	Cards help organize content and apply hover effects.
+    
+    o	Build a basic card with an image, title, and description.
+    
+    o	Add hover effects for zoom-in or elevation.
+    
+    o	Create a responsive card layout using Flexbox or Grid.
+
 
 
 ---
@@ -96,11 +107,9 @@ This project showcases the creation of an Animated Placeholder Form, a user-frie
 
 ## **Technologies Used**
 
-- `HTML`: Structured the form structure with inputs, labels, and validation attributes.
+- `HTML`: For structuring the form and implementing input validation.
 
-- `CSS`: Styled the form, added interactivity, and ensured responsive design using Flexbox.
-
-- `Font Awesome`: Added icons for input fields and buttons
+- `CSS`: For styling, animations, and controlling step transitions.
 
 
 <Feel free to contribute, suggest improvements, or report any issues! ✨🚀
