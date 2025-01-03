@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Koficodeit">
+    <meta name="description" content="Carousel Image Gallery">
+    <title>Carousel Image Gallery</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carousel Image Gallery</h1>
+
+        <p>A simple carousel-style gallery where users can see one image at a time using CSS grid layout, without JavaScript.</p>
+    </header>
+    
+    <main class="container">
+
+        <!-- Input Navigation -->
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
+        <input type="radio" name="slides" id="slide4">
+
+
+        <section class="slider">
+            <article class="slides">
+                <figure class="slide1">
+                    <img src="assets/imgs/image (14).jpg" alt="">
+                </figure>
+                <figure class="slide2">
+                    <img src="assets/imgs/image (18).jpg" alt="">
+                </figure>
+                <figure class="slide3">
+                    <img src="assets/imgs/image (2).jpg" alt="">
+                </figure>
+                <figure class="slide4">
+                    <img src="assets/imgs/image (5).jpg" alt="">
+                </figure>
+            </article>
+        </section>
+
+        <section class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </section>
+    </main>
+</body>
+</html>
